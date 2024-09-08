@@ -54,10 +54,10 @@ While synthetic data can initially seem beneficial, over-reliance can lead to ne
 
 ### Impact of AI Autophagy on Language Models (Mode Collapse, Break of Scaling Laws)
 | Title | arXiv | Pub. & Date | Key Findings |
-|:-----:|:-----:|:-----:|:-----:|
+|-----|-----|-----|-----|
 | [The Curse of Recursion: Training on Generated Data Makes Models Forget](https://arxiv.org/abs/2305.17493) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2305.17493) | May 2023 | Autophagy fine-tuning leads to repetitive phrases (mode collapse); access to human-generated content is essential. |
 | [A Tale of Tails: Model Collapse as a Change of Scaling Laws](https://arxiv.org/abs/2402.07043) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2402.07043) | Feb. 2024 | Synthetic data disrupts scaling laws. |
-
+| [The curious decline of linguistic diversity: Training language models on synthetic text](https://arxiv.org/abs/2311.09807) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2311.09807) | Nov. 2023 | A consistent decrease in the diversity of the model outputs through successive iterations. |
 
 ##  What technical strategies can mitigate the negative consequences of AI autophagy?
 
@@ -65,7 +65,7 @@ While synthetic data can initially seem beneficial, over-reliance can lead to ne
 **Personal Note**: Although some papers demonstrate the efficacy of cherry-picking in fine-tuning large language models, imaging data still suffers from a [quality-variety tradeoff](https://arxiv.org/abs/2307.01850).
 
 | Title | arXiv | Pub. & Date | Key Findings |
-|:-----:|:-----:|:-----:|:-----:|
+|-----|-----|-----|-----|
 | [Beyond Model Collapse: Scaling Up with Synthesized Data Requires Reinforcement](https://arxiv.org/abs/2406.07515) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2406.07515) | Jun. 2024 | Training from feedback-augmented synthesized data, either by pruning incorrect predictions or by selecting the best of several guesses, can prevent model collapse, validating popular approaches like RLHF. |
 | [Self-Correcting Self-Consuming Loops for Generative Model Training](https://arxiv.org/abs/2402.07087) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2402.07087) | Feb. 2024 | By introducing an idealized correction function, which maps a data point to be more likely under the true data distribution, self-consuming loops can be made exponentially more stable. |
 
@@ -80,7 +80,7 @@ However, using watermarking for security or verification assumes uniform adoptio
 
 
 | **Domain**              | **Technique**                               | **Description**                                                                                                               | 
-|:-------------------------:|:---------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|
+|-------------------------:|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | **Spatial Domain**      | Least Significant Bit (LSB)                 | Modifies the least significant bits of pixel values to embed the watermark.                                                   |  
 |                         | Improvements to LSB                         | Includes techniques like [random embedding](https://ieeexplore.ieee.org/abstract/document/4656530?casa_token=3f4xpWiamTMAAAAA:26DU2v9tpFnN5Snaf7xGKhneD7infvSnBU6GGwBjiVvRc0KKI4EpNbSagxne4HKEkdEWmg) and [statistical similarity](https://ieeexplore.ieee.org/abstract/document/5955442?casa_token=p3vrruhM-YYAAAAA:5Lkv3YLwN_8XEtjsrn2d79qNDSLAHe2PyfyOKb-SMRb_tHFWCLgljYGpno8LZi3TYHX4nw) measures to enhance robustness and imperceptibility.     | 
 | **Transform Domain**    | [Discrete Cosine Transformation (DCT)](https://www.sciencedirect.com/science/article/abs/pii/S0165168498000152)        | Transforms the image and embeds the watermark into selected spectral coefficients.                                            |
@@ -93,7 +93,7 @@ However, using watermarking for security or verification assumes uniform adoptio
 Similarly, as image watermarking techniques, watermarking may not effectively prevent the misuse of NLP generative models unless it is uniformly applied across all powerful LLMs. In real-world settings, where users typically have access only to black-box language models, it is impractical to manipulate the model’s vocabulary distribution or intervene in the text generation process. This limitation reduces the effectiveness of during LLM watermarking strategies. However, post LLM watermarking methods [fall short compared to integrated approaches in preserving the quality of generated texts](https://arxiv.org/abs/2307.15992), and they are [more susceptible to being circumvented by paraphrase attacks](https://arxiv.org/abs/2303.11156). 
 
 | **Type of Watermarking** | **Paper Name**                         | **Link**                               | **Comments**                                                                                      | **Year** |
-|:--------------------------:|:----------------------------------------:|:----------------------------------------|:---------------------------------------------------------------------------------------------------:|:----------:|
+|--------------------------|----------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------|----------|
 | **Post LLM Watermarking** | Zero-Width Characters                 | N/A                                    | Involves inserting invisible Unicode characters, such as zero-width spaces, for encoding information. | N/A      |
 |                          | Natural language processing for information assurance and security: an overview and implementations                | [🔗](https://dl.acm.org/doi/abs/10.1145/366173.366190?casa_token=qrsrM8ulhn4AAAAA:TjX1qmnc-msVn1G7DaSuNcDVo93SBjEKLidXsOvRtsy1I95KRncSx3D-PXWgLGg6RHGCc7z18Q) | Utilizes predefined rules and dictionaries for word replacement.                                  | 2001     |
 |                          | Natural language watermarking: challenges in building a practical system      | [🔗](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/6072/60720A/Natural-language-watermarking-challenges-in-building-a-practical-system/10.1117/12.643560.short#_=_) | Modifies sentence structures using predefined rules.                                              | 2006     |
