@@ -34,8 +34,8 @@ While synthetic data can initially seem beneficial, over-reliance can lead to ne
 ###  Theoretical Intuition
 
 | Title | arXiv | Pub. & Date | Theoretical Model |
-|:-----:|:-----:|:-----:|:-----:|
-| [On the Stability of Iterative Retraining of Generative Models on their own Data](https://arxiv.org/abs/2310.00429) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2310.00429) | Feb. 2024 | Gaussian and ridge regression |
+|-----|-----|-----|-----|
+| [Model Collapse Demystified: The Case of Regression](https://arxiv.org/abs/2402.07712) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2402.07712) | Feb. 2024 | Gaussian and ridge regression |
 | [On the Stability of Iterative Retraining of Generative Models on their own Data](https://arxiv.org/abs/2310.00429) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2310.00429) | Sep. 2023 | Multi-variate Gaussian |
 | [Self-Consuming Generative Models Go MAD](https://arxiv.org/abs/2307.01850) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2307.01850) | Jul. 2023 | Single dimensional Gaussian  |
 | [The Curse of Recursion: Training on Generated Data Makes Models Forget](https://arxiv.org/abs/2305.17493) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2305.17493) | May 2023 | Single dimensional Gaussian |
@@ -44,7 +44,7 @@ While synthetic data can initially seem beneficial, over-reliance can lead to ne
 ### Impact of AI Autophagy on Vision Models (Quality Degradation, Mode Collapse)
 
 | Title | arXiv | Pub. & Date | Key Findings |
-|:-----:|:-----:|:-----:|:-----:|
+|-----|-----|-----|-----|
 | [Self-Consuming Generative Models Go MAD](https://arxiv.org/abs/2307.01850) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2307.01850) | Jul. 2023 | "Cherry-picking" during the autophagy loop (only using good-looking data for downstream tasks) exaggerates mode collapse in further iterations. Access to human-generated content mitigates quality degradation. |
 | [Combining Generative Artificial Intelligence (AI) and the Internet](https://arxiv.org/abs/2303.01255) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2303.01255) | Feb. 2023 | Noted fuzziness and information loss in images during AI autophagy. |
 | [Towards Understanding the Interplay of Generative Artificial Intelligence and the Internet](https://arxiv.org/abs/2306.06130) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2306.06130) | Jun. 2023 | AI autophagy can lead to degeneration and loss of diversity. |
