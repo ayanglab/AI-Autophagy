@@ -58,6 +58,15 @@ While synthetic data can initially seem beneficial, over-reliance can lead to ne
 | [The Curse of Recursion: Training on Generated Data Makes Models Forget](https://arxiv.org/abs/2305.17493) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2305.17493) | May 2023 | Autophagy fine-tuning leads to repetitive phrases (mode collapse); access to human-generated content is essential. |
 | [A Tale of Tails: Model Collapse as a Change of Scaling Laws](https://arxiv.org/abs/2402.07043) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2402.07043) | Feb. 2024 | Synthetic data disrupts scaling laws. |
 | [The curious decline of linguistic diversity: Training language models on synthetic text](https://arxiv.org/abs/2311.09807) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2311.09807) | Nov. 2023 | A consistent decrease in the diversity of the model outputs through successive iterations. |
+| [Large Language Models Suffer From Their Own Output: An Analysis of the Self-Consuming Training Loop](https://arxiv.org/abs/2311.16822) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2311.16822) | Jun. 2024 | The output declines in its diversity depending on the proportion of the used generated data. |
+
+### Maintaining Real Data
+| Title | arXiv | Pub. & Date | Key Findings |
+|-----|-----|-----|-----|
+| [Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data](https://arxiv.org/abs/2404.01413) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2404.01413) | Apr 2024 | If a fixed set of real data is maintained, the test error stabilize. |
+| [Towards Theoretical Understandings of Self-Consuming Generative Models](https://arxiv.org/abs/2402.11778) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2402.11778) | Feb 2024 | With careful control of the mixture of real and synthetic data and under certain conditions, the model can maintain closeness to the true data distribution. |
+| [On the Stability of Iterative Retraining of Generative Models on their own Data](https://arxiv.org/abs/2310.00429) | [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2310.00429) | Apr 2024 |First prove the stability of iterative training under the condition that the initial generative models approximate the data distribution well enough and the proportion of clean training data (w.r.t. synthetic data) is large enough. |
+
 
 ##  What technical strategies can mitigate the negative consequences of AI autophagy?
 
